@@ -9,8 +9,8 @@ from sklearn.metrics import accuracy_score, auc
 from train import load_data,normalize
 
 # define the validation image size
-image_height = 256
-image_weight = 256
+image_height = 64
+image_weight = 64
 
 def read_image(path):
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     model = tf.keras.models.load_model("files/model.h5")
 
     # load data
-    dataset_path = os.path.join("augmented", "pred")
+    dataset_path = os.path.join("augmented", "test")
     test_image, test_mask = load_data(dataset_path)
 
     # predict
