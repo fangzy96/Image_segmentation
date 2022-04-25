@@ -22,4 +22,4 @@ They are the different models.
 This project references Tensorflow tutorial: https://www.tensorflow.org/tutorials/images/segmentation?hl=en and the YouTube tutorial: https://www.youtube.com/watch?v=M3EZS__Z_XE
 
 Notice:
-I used tensorflow 2.3, and at first I used 64 * 64 as training, then to predict in larger image (256 * 256) --augmented/pred/ , it is will have a warning about the size 64 and 256, but it could word. However, in tensorflow 2.7, it is not compatible, so I revised the predicted size to 64 * 64. But I still keep the pred dictory, and under tensorflow 2.3, it could use it. (just revise it in predict.py line 51).
+I used tensorflow 2.3, and at first I used 64 * 64 as training, then to predict in larger image (256 * 256) --augmented/pred/ , it is will have a warning about the size 64 and 256, but it could work. However, in tensorflow 2.7, it is not compatible, so I revised the predicted size to 64 * 64. But I still keep the pred dictory, and under tensorflow 2.3, it could use it. (just revise it in predict.py line 51).
